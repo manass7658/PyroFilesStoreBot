@@ -4,25 +4,25 @@ import os
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", "0"))
-	API_HASH = os.environ.get("API_HASH")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN")
-	BOT_USERNAME = os.environ.get("BOT_USERNAME")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-100"))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "1445283714"))
-	DATABASE_URL = os.environ.get("DATABASE_URL")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
-	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", None)
+	API_ID = int(os.environ.get("API_ID", "27857521"))
+	API_HASH = os.environ.get("API_HASH", "627b314d25c83e2c9a1a99db9ae0a3ef")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN", "7185137048:AAGJAimvEIyyJcklAnMPmabzR-j4s5hNw9g")
+	BOT_USERNAME = os.environ.get("@Filesonlybot")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", "-1002438349624"))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5175265779"))
+	DATABASE_URL = os.environ.get("DATABASE_URL" , "mongodb+srv://naikmithun274:MPOo2wpAjCx49bEY@telegram.pdb2s.mongodb.net/?retryWrites=true&w=majority&appName=Telegram")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002340808825")
+	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1002484381556")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
-	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
+	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", False)
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
-	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
+	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", False)
 	ABOUT_BOT_TEXT = f"""
 This is Permanent Files Store Bot!
 Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
 
-🤖 **My Name:** [Files Store Bot](https://t.me/{BOT_USERNAME})
+🤖 **My Name:** [Files Store Bot](https://t.me/{@Filesonlybot})
 
 📝 **Language:** [Python3](https://www.python.org)
 
